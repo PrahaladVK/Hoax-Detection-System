@@ -35,9 +35,9 @@ HoaxDetectionSystem/
 ├── HoaxDetectionSystem.ipynb
 ├── README.md
 ├── sample_data/
-│   ├── True.csv
-│   └── Fake.csv
-└── output/
+    ├── True.csv
+    └── Fake.csv
+
 ```
 
 ---
