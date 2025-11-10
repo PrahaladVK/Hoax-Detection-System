@@ -24,7 +24,7 @@ Supports **.txt**, **.csv**, and **.xlsx** input files and generates combined re
 - SERP verification
 
 ### Secure API Handling  
-Uses **Google Colab Secrets** to safely store and load the Gemini API key.
+Uses **Google Colab Secrets** to safely store and load the SERP API key.
 
 ---
 
