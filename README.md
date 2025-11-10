@@ -1,6 +1,6 @@
 # Hoax Detection System
 
-This project is a **hybrid Fake News / Hoax Detection System** combining **AI (Transformers)**, **NLP**, a **rule-based expert system**, and **Gemini API fact verification**.  
+This project is a **hybrid Fake News / Hoax Detection System** combining **AI (Transformers)**, **NLP**, a **rule-based expert system**, and **SERP API fact verification**.  
 It provides **reliable real-time classification** of text into **real**, **fake**, or **misleading**.
 
 ---
@@ -10,8 +10,8 @@ It provides **reliable real-time classification** of text into **real**, **fake*
 ### AI-Based Classification  
 Uses a fine-tuned **DistilRoBERTa/BERT** model to classify news text accurately.
 
-### Gemini Fact Verification  
-Automatically queries **Google Gemini** to verify factual claims and returns concise, evidence-based answers.
+### SERP Fact Verification  
+Automatically queries **SERP API** to verify factual claims and returns concise, evidence-based answers.
 
 ### Rule-Based Expert System  
 Analyzes content using heuristic rules (keyword patterns, exaggeration, propaganda cues, emotional tone, formatting anomalies) and produces a **Suspicion Score**.
@@ -21,7 +21,7 @@ Supports **.txt**, **.csv**, and **.xlsx** input files and generates combined re
 
 - Model prediction  
 - Rule-based analysis  
-- Gemini verification
+- SERP verification
 
 ### Secure API Handling  
 Uses **Google Colab Secrets** to safely store and load the Gemini API key.
@@ -49,7 +49,7 @@ graph TD
     A[Input Text] --> B[Preprocess]
     B --> C[Transformer Model<br/>DistilRoBERTa / BERT]
     B --> D[Rule-Based Heuristics<br/>Suspicion Score]
-    B --> E[Gemini Fact Check<br/>Evidence]
+    B --> E[SERP Fact Check<br/>Evidence]
     C --> F[Combine Results]
     D --> F
     E --> F
